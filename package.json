@@ -1,0 +1,28 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test",
+    "start": "parcel index.html"
+  },
+  "author": "scott",
+  "license": "MIT",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.9.1",
+    "posthtml": "^0.11.3",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2",
+    "vue-hot-reload-api": "^2.3.0",
+    "vue-property-decorator": "^6.1.0",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "dependencies": {
+    "vue": "^2.5.16"
+  }
+}
