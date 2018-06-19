@@ -1,5 +1,5 @@
 import { Component, Vue, Prop, Provide } from 'vue-property-decorator'
-import Header from './header.vue';
+import Header from './header/header.vue';
 
 @Component({
   components: {
@@ -9,7 +9,7 @@ import Header from './header.vue';
 export default class App extends Vue {
 
   @Provide() 
-  foo = 'fooy';
+  foo = 'foo';
 
   @Provide() 
   bar = 'bar';
