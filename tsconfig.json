@@ -2,6 +2,8 @@
   "compilerOptions": {
     "experimentalDecorators": true,
     "allowJs": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "lib": ["es2015", "esnext", "dom"],
+    "target": "es5"
   }
 }
