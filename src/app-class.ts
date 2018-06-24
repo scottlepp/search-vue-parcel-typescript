@@ -1,17 +1,20 @@
 import { Component, Vue, Prop, Provide } from 'vue-property-decorator'
-import Header from './header/header.vue';
+import VsResults from './search-results/vs-results.vue';
+import VsInput from './search-input/vs-input.vue';
+import voyagerApi from './search-results/search-api';
 
 @Component({
   components: {
-    Header
+    VsResults,
+    VsInput
   }
 })
 export default class App extends Vue {
 
   @Provide() 
-  foo = 'foo';
+  results = [];
 
-  @Provide() 
-  bar = 'bar';
-
+  async onSearch(term) {
+    this.results = await voyagerApi.search(term);
+  }
 }
